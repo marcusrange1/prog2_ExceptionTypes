@@ -32,6 +32,9 @@ public class Program {
         catch (AccountException e){
             System.out.println(e.getMessage());
         }
+        catch (RuntimeException e){
+            System.out.println("Error");
+        }
         finally{
             sc.close();
         }
